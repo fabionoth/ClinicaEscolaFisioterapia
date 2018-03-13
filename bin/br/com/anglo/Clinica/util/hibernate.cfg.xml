@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name="">
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1/clinica</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.current_session_context_class">org.hibernate.context.ThreadLocalSessionContext</property>  
+		<property name="hbm2ddl.auto">update</property>
+
+		<mapping class="br.com.anglo.Clinica.model.Estagiario" />
+		<mapping class="br.com.anglo.Clinica.model.Paciente" />
+		<mapping class="br.com.anglo.Clinica.model.Usuario" />
+		<mapping class="br.com.anglo.Clinica.model.Triagem" />
+		<mapping class="br.com.anglo.Clinica.model.Tratamento" />
+		<mapping class="br.com.anglo.Clinica.model.Anamnese" />
+		<mapping class="br.com.anglo.Clinica.model.FichaAvaliacaoFibromialgia" />
+		<mapping class="br.com.anglo.Clinica.model.FichaAvaliacaoNeuroFuncional" />
+		<mapping class="br.com.anglo.Clinica.model.FichaAvaliacaoNeuroPediatra" />
+		<mapping class="br.com.anglo.Clinica.model.FichaAvaliacaoRespiratoriaAdulto" />
+		<mapping class="br.com.anglo.Clinica.model.FichaAvaliacaoRespiratoriaPediatria" />
+		<mapping class="br.com.anglo.Clinica.model.FichaHidroterapia" />
+		<mapping class="br.com.anglo.Clinica.model.FichaOrtopediaAlteracaoPostural" />
+		<mapping class="br.com.anglo.Clinica.model.FichaOrtopedicaAvaliacaoOmbro" />
+	</session-factory>
+</hibernate-configuration>
