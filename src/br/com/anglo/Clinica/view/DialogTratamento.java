@@ -324,10 +324,10 @@ public class DialogTratamento extends JDialog {
 		tFCondutaLongoPrazo.setEditable(true);
 	}
 	private void salvar() {
-		if(tipo.equals("novo")){
+		if("novo".equals(tipo)){
 			salvarNovo();
 		}
-		if(tipo.equals("editar")){
+		if("editar".equals(tipo)){
 			salvarEditar();
 		}
 		
